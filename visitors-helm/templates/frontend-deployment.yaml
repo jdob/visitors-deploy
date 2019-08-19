@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: visitors-frontend
 spec:
-  # replicas: {{ .Values.backend.size }}
   replicas: 1
   selector:
     matchLabels:
@@ -24,4 +23,4 @@ spec:
               containerPort: 3000
           env:
             - name: REACT_APP_TITLE
-              value: "Helm Test"
+              value: {{ .Values.frontend.title }}

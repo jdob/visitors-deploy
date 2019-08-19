@@ -3,8 +3,7 @@ kind: Deployment
 metadata:
   name: visitors-backend
 spec:
-  # replicas: {{ .Values.backend.size }}
-  replicas: 1
+  replicas: {{ .Values.backend.size }}
   selector:
     matchLabels:
       app: visitors
