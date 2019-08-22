@@ -1,2 +1,5 @@
 ---
-# vars file for visitors
+db_name: visitors
+db_user: visitors
+db_pass: visitors
+db_service: mysql-service
